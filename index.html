@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اسمك هنا | الملف الشخصي</title>
+    <!-- استيراد خط تجوال العربي العصري -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- استيراد أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* القسم التعريفي العلوي */
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* أزرار التواصل الاجتماعي */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent);
+            color: var(--bg-color);
+            transform: translateY(-3px);
+        }
+
+        /* الأقسام */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-right: 4px solid var(--accent);
+            padding-right: 12px;
+        }
+
+        /* المهارات */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            color: var(--accent);
+        }
+
+        /* المشاريع / الأعمال */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .project-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* التذييل */
+        footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- القسم العلوي -->
+        <header>
+            <!-- استبدل الرابط أدناه برابط صورتك الشخصية -->
+            <img src="https://via.placeholder.com/150/1e293b/38bdf8?text=Photo" alt="الصورة الشخصية" class="profile-img">
+            <h1>اسمك الكامل هنا</h1>
+            <div class="subtitle">مطور ويب | مصمم جرافيك | صانع محتوى</div>
+            <p class="bio">
+                مرحباً بك في صفحتي الشخصية. أنا شغوف بالتقنية والتصميم، وأسعى دائماً لتقديم حلول إبداعية وعملية. هنا يمكنك استعراض أبرز أعمالي والتواصل معي مباشرة.
+            </p>
+            
+            <!-- روابط التواصل -->
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/" target="_blank" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                <a href="mailto:example@email.com" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+
+        <!-- قسم المهارات -->
+        <section>
+            <h2>المهارات والخبرات</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">تطوير المواقع (HTML/CSS)</span>
+                <span class="skill-tag">تصميم واجهات المستخدم (UI/UX)</span>
+                <span class="skill-tag">إدارة المشاريع</span>
+                <span class="skill-tag">التسويق الرقمي</span>
+                <span class="skill-tag">تحليل البيانات</span>
+            </div>
+        </section>
+
+        <!-- قسم الأعمال -->
+        <section>
+            <h2>أبرز المشاريع والأعمال</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>اسم المشروع الأول</h3>
+                    <p>وصف مختصر للمشروع، الفكرة التي يعالجها، والأدوات التي استخدمتها في تنفيذه.</p>
+                    <a href="#" class="project-link">معاينة المشروع &larr;</a>
+                </div>
+                <div class="project-card">
+                    <h3>اسم المشروع الثاني</h3>
+                    <p>وصف مختصر للمشروع، الفكرة التي يعالجها، والأدوات التي استخدمتها في تنفيذه.</p>
+                    <a href="#" class="project-link">معاينة المشروع &larr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- التذييل -->
+        <footer>
+            <p>جميع الحقوق محفوظة &copy; 2026 | اسمك الكامل</p>
+        </footer>
+    </div>
+
+</body>
+</html>
