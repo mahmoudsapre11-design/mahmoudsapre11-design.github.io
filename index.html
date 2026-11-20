@@ -1,12 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اسمك هنا | الملف الشخصي</title>
-    <!-- استيراد خط تجوال العربي العصري -->
+    <title>محمود صبري | مطور Backend</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <!-- استيراد أيقونات FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -37,7 +36,6 @@
             padding: 40px 20px;
         }
 
-        /* القسم التعريفي العلوي */
         header {
             text-align: center;
             padding: 40px 0;
@@ -67,13 +65,12 @@
         }
 
         .bio {
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto 30px;
             color: var(--text-muted);
             font-size: 1.05rem;
         }
 
-        /* أزرار التواصل الاجتماعي */
         .social-links {
             display: flex;
             justify-content: center;
@@ -102,7 +99,6 @@
             transform: translateY(-3px);
         }
 
-        /* الأقسام */
         section {
             margin-bottom: 50px;
         }
@@ -114,7 +110,6 @@
             padding-right: 12px;
         }
 
-        /* المهارات */
         .skills-grid {
             display: flex;
             flex-wrap: wrap;
@@ -130,7 +125,6 @@
             color: var(--accent);
         }
 
-        /* المشاريع / الأعمال */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -172,7 +166,6 @@
             text-decoration: underline;
         }
 
-        /* التذييل */
         footer {
             text-align: center;
             padding-top: 30px;
@@ -185,57 +178,59 @@
 <body>
 
     <div class="container">
-        <!-- القسم العلوي -->
         <header>
-            <!-- استبدل الرابط أدناه برابط صورتك الشخصية -->
-            <img src="https://via.placeholder.com/150/1e293b/38bdf8?text=Photo" alt="الصورة الشخصية" class="profile-img">
-            <h1>اسمك الكامل هنا</h1>
-            <div class="subtitle">مطور ويب | مصمم جرافيك | صانع محتوى</div>
+            <!-- استبدل الرابط أدناه بصورتك الشخصية بعد رفعها إلى المستودع باسم me.jpg -->
+            <img src="https://via.placeholder.com/150/1e293b/38bdf8?text=MS" alt="محمود صبري" class="profile-img">
+            <h1>محمود صبري</h1>
+            <div class="subtitle">مطور Backend | TypeScript &amp; Node.js | NestJS &amp; PostgreSQL</div>
             <p class="bio">
-                مرحباً بك في صفحتي الشخصية. أنا شغوف بالتقنية والتصميم، وأسعى دائماً لتقديم حلول إبداعية وعملية. هنا يمكنك استعراض أبرز أعمالي والتواصل معي مباشرة.
+                مطور أنظمة خلفية (Backend) متخصص في بناء واجهات برمجية آمنة وقابلة للتوسع باستخدام TypeScript وNode.js وNestJS وExpress.js مع قواعد بيانات PostgreSQL وPrisma ORM، وأعمل على تصميم أنظمة المصادقة والصلاحيات وتكامل الخدمات الخارجية.
             </p>
-            
-            <!-- روابط التواصل -->
+
             <div class="social-links">
-                <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/mahmoudsapre11-design" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/" target="_blank" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
                 <a href="mailto:example@email.com" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
             </div>
         </header>
 
-        <!-- قسم المهارات -->
         <section>
-            <h2>المهارات والخبرات</h2>
+            <h2>المهارات والتقنيات</h2>
             <div class="skills-grid">
-                <span class="skill-tag">تطوير المواقع (HTML/CSS)</span>
-                <span class="skill-tag">تصميم واجهات المستخدم (UI/UX)</span>
-                <span class="skill-tag">إدارة المشاريع</span>
-                <span class="skill-tag">التسويق الرقمي</span>
-                <span class="skill-tag">تحليل البيانات</span>
+                <span class="skill-tag">Node.js &amp; Express.js</span>
+                <span class="skill-tag">NestJS</span>
+                <span class="skill-tag">TypeScript &amp; JavaScript</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Prisma ORM</span>
+                <span class="skill-tag">JWT Auth, Guards &amp; RBAC</span>
+                <span class="skill-tag">REST APIs &amp; Axios</span>
+                <span class="skill-tag">Git &amp; GitHub</span>
             </div>
         </section>
 
-        <!-- قسم الأعمال -->
         <section>
-            <h2>أبرز المشاريع والأعمال</h2>
+            <h2>أبرز المشاريع البرمجية</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>اسم المشروع الأول</h3>
-                    <p>وصف مختصر للمشروع، الفكرة التي يعالجها، والأدوات التي استخدمتها في تنفيذه.</p>
-                    <a href="#" class="project-link">معاينة المشروع &larr;</a>
+                    <h3>منصة سند للتدريب والورش</h3>
+                    <p>واجهة برمجية خلفية متكاملة باستخدام NestJS وTypeScript وPrisma وPostgreSQL لإدارة الحسابات والجلسات والتسجيل في الدورات والإعلانات.</p>
+                    <a href="https://github.com/mahmoudsapre11-design" target="_blank" class="project-link">استعراض على GitHub &larr;</a>
                 </div>
                 <div class="project-card">
-                    <h3>اسم المشروع الثاني</h3>
-                    <p>وصف مختصر للمشروع، الفكرة التي يعالجها، والأدوات التي استخدمتها في تنفيذه.</p>
-                    <a href="#" class="project-link">معاينة المشروع &larr;</a>
+                    <h3>نظام إدارة التعلم (LMS)</h3>
+                    <p>خدمة Backend مبنية بـ NestJS وPostgreSQL تدعم الأدوار والصلاحيات وإدارة المقررات الدراسية وتسجيل الطلاب.</p>
+                    <a href="https://github.com/mahmoudsapre11-design" target="_blank" class="project-link">استعراض على GitHub &larr;</a>
+                </div>
+                <div class="project-card">
+                    <h3>نظام متجر إلكتروني</h3>
+                    <p>نظام خلفي بـ TypeScript وPrisma وPostgreSQL لإدارة الحسابات والمنتجات وتحديث المخزون تلقائياً عند إنشاء الطلبات.</p>
+                    <a href="https://github.com/mahmoudsapre11-design" target="_blank" class="project-link">استعراض على GitHub &larr;</a>
                 </div>
             </div>
         </section>
 
-        <!-- التذييل -->
         <footer>
-            <p>جميع الحقوق محفوظة &copy; 2026 | اسمك الكامل</p>
+            <p>جميع الحقوق محفوظة &copy; 2026 | محمود صبري</p>
         </footer>
     </div>
 
